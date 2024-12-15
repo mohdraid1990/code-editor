@@ -1,0 +1,8 @@
+@import '../variables';
+
+.problem-description {
+  margin-bottom: 2rem;
+  padding: $gap-size;
+  border-radius: $border-radius;
+  background: rgba(255, 255, 255, 0.05);
+}

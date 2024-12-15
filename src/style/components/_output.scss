@@ -1,0 +1,16 @@
+@import '../variables';
+
+.output-container {
+  margin-top: $gap-size;
+  padding: $gap-size;
+  border-radius: $border-radius;
+  background: rgba(255, 255, 255, 0.1);
+  
+  &.error {
+    border-left: 4px solid #ff4444;
+  }
+  
+  &.success {
+    border-left: 4px solid #44ff44;
+  }
+}

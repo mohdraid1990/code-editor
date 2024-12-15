@@ -1,0 +1,49 @@
+@import '../variables';
+
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-size;
+  margin-top: 2rem;
+  
+  .controls {
+    display: flex;
+    gap: $gap-size;
+    align-items: center;
+    
+    @media (max-width: $mobile-breakpoint) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+}
+
+.select-language {
+  padding: 0.6em 1.2em;
+  border-radius: $border-radius;
+  border: 1px solid $primary-color;
+  background: transparent;
+  color: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+    border-color: $secondary-color;
+  }
+}
+
+.run-button {
+  padding: 0.6em 1.2em;
+  border-radius: $border-radius;
+  border: 1px solid transparent;
+  background-color: $primary-color;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
